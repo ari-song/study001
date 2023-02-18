@@ -12,7 +12,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <title>Movie Diary</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
@@ -31,7 +31,7 @@
             align-items: center;
             justify-content: center;
 
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/2398354/pexels-photo-2398354.jpeg');
             background-position: center;
             background-size: cover;
         }
@@ -89,7 +89,7 @@
 
 <body>
     <div class="mytitle">
-        <h1>내 생애 최고의 영화들</h1>
+        <h1>Before, After and Finally The Film</h1>
         <button>영화 기록하기</button>
     </div>
     <div class="mypost">
@@ -97,6 +97,17 @@
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">영화URL</label>
         </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>선택하기</option>
+              <option value="1">⭐</option>
+              <option value="2">⭐⭐</option>
+              <option value="3">⭐⭐⭐</option>
+              <option value="4">⭐⭐⭐⭐</option>
+              <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+          </div>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
             <label for="floatingTextarea">코멘트</label>
@@ -110,48 +121,48 @@
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://media-cache.cinematerial.com/p/500x/ormm6rw5/everything-everywhere-all-at-once-movie-cover.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
+                        <h5 class="card-title">Everything Everywhere All at Once</h5>
+                        <p class="card-text">Dan Kwan, Daniel Scheiner</p>
+                        <p>⭐⭐⭐⭐⭐</p>
                         <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://media-cache.cinematerial.com/p/500x/cnmllksd/after-yang-movie-poster.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
+                        <h5 class="card-title">After Yang</h5>
+                        <p class="card-text">Kogonada</p>
+                        <p>⭐⭐⭐⭐⭐</p>
                         <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://media-cache.cinematerial.com/p/500x/dokgdkn1/decision-to-leave-south-korean-movie-poster.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
+                        <h5 class="card-title">헤어질 결심</h5>
+                        <p class="card-text">박찬욱</p>
+                        <p>⭐⭐⭐⭐⭐</p>
                         <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2022%2F11%2Fthe-first-slamdunk-movie-korea-release-schedule-confirmed-01.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
+                        <h5 class="card-title">The Fisrt Slam Dunk</h5>
+                        <p class="card-text">井上雄彦</p>
+                        <p>⭐⭐⭐⭐</p>
                         <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
                     </div>
                 </div>
